@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(63, 63, 63);
+}
+.acc {
+  width: 50%;
+  margin: 5px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(60, 59, 60);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.acc:hover,
+.active {
+  background-color: rgb(156, 156, 156);
+}
+.acc::after {
+  content: "\0027A4";
+  position: absolute;
+  left: 48%;
+  color: rgb(54, 54, 54);
+  transform: rotate(90deg);
+  transition: all 0.5s ease-out;
+}
+.active::after {
+  transform: rotate(270deg);
+}
+.panel {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: wheat;
+  background-color: rgb(117, 117, 117);
+  width: 500px;
+  margin-top: 5px;
+  margin-left: 90px;
+  font-size: 16px;
+  border-radius: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.75s ease-in-out;
+}
+.panel p{
+    font-size: 100px;
+    text-align: center;
+}
